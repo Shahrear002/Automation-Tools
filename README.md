@@ -1,111 +1,102 @@
-⚡ Form Automation Tools
+# ⚡ Form Automation Tools
 
-A collection of browser extensions designed to automate repetitive data entry tasks on complex web forms. This repository contains two distinct tools tailored for different automation needs.
+A collection of powerful browser extensions designed to automate
+repetitive data entry on complex web forms. This repository includes two
+specialized tools optimized for different automation needs.
 
-📂 Included Extensions
+## 📂 Included Extensions
 
-Extension
+  -----------------------------------------------------------------------
+  Extension               Purpose                 Best For
+  ----------------------- ----------------------- -----------------------
+  **Dropdown Autofiller** Bulk update of dropdown Forms requiring
+                          (`<select>`) fields     repetitive selections
+                                                  (e.g., 50+ rows set to
+                                                  "Yes")
 
-Purpose
+  **Smart Form Filler**   Intelligent text field  Complex forms, gov
+                          autofill using          tenders, table-based
+                          label/value mapping     layouts
+  -----------------------------------------------------------------------
 
-Best For
+## 🛠 Extension 1: Dropdown Autofiller
 
-1. Dropdown Autofiller
+A lightweight utility that instantly updates all dropdown elements on a
+page to a specified value.
 
-Mass-updates dropdown menus.
+### ✨ Features
 
-Forms requiring repetitive selection (e.g., setting 50 rows to "Yes").
+-   **Bulk Update:** Modify hundreds of dropdowns in milliseconds.
+-   **Case-Insensitive Matching:** "yes", "Yes", "YES" --- all match.
+-   **Event Triggering:** Fires `change` events so dynamic calculations
+    refresh automatically.
 
-2. Smart Form Filler
+### 🚀 Usage
 
-Intelligently fills text inputs.
+1.  Click the extension icon.
+2.  Enter the value you want to select (e.g., `Yes`, `No`, `N/A`).
+3.  Click **Fill Dropdowns**.
 
-Complex forms, government tenders, and table-based layouts using key-value mapping.
+## 🧠 Extension 2: Smart Form Filler
 
-🛠 Extension 1: Dropdown Autofiller
+An advanced automation tool that maps human-readable text to form fields
+using intelligent label detection --- ideal for large, table-heavy
+systems.
 
-A lightweight utility to instantly set all <select> dropdown elements on a page to a specific value.
+### ✨ Features
 
-Features
+-   **Plain Text Mapping:**\
+    Use a simple `Label : Value` format, e.g.:
 
-Bulk Update: Sets hundreds of dropdowns in milliseconds.
+        Name : John Doe
+        Date of Birth : 01/01/1990
+        National ID : 123456789
+        Position : Manager
 
-Case Insensitive: Typing "yes" matches "Yes", "YES", or "yes".
+-   **Smart Table Detection:** Finds labels even when they're in
+    separate table cells.
 
-Event Triggering: Automatically fires change events to ensure page calculations (like Grand Totals) update immediately.
+-   **Strict Matching:** Prevents wrong matches (e.g., `"Position"`
+    won't overwrite `"Proposed Position"`).
 
-Usage
+-   **Local Storage:** Saves your input between sessions.
 
-Click the extension icon.
+-   **Safe Execution:** Ignores hidden fields to prevent accidental
+    changes.
 
-Type the value you want to select (e.g., Yes, No, N/A).
+### 🚀 Usage
 
-Click Fill Dropdowns.
+1.  Click the extension icon.
+2.  Paste your label-value data.
+3.  Click **Autofill Form** --- the script scans and fills all matching
+    fields.
 
-🧠 Extension 2: Smart Form Filler
+## 🧩 Installation Guide
 
-An advanced automation tool that maps plain text data to form fields based on intelligent label matching. It is specifically engineered to handle complex table layouts often found in enterprise or government systems.
+Install these extensions manually (no store required).
 
-Features
+### Chrome / Edge / Brave
 
-Plain Text Mapping: Define your data in a simple Label : Value format.
+1.  Download or clone this repository.
+2.  Open `chrome://extensions`.
+3.  Enable **Developer Mode**.
+4.  Click **Load Unpacked**.
+5.  Select the extension folder (e.g., `smart-form-filler`).
 
-Smart Table Detection: Accurately identifies labels in table headers even when the input field is in a different cell.
+### Firefox
 
-Strict Matching: Prevents incorrect overwrites (e.g., "Position" will not overwrite "Proposed Position").
+1.  Open `about:debugging#/runtime/this-firefox`.
+2.  Click **Load Temporary Add-on...**
+3.  Select the extension's `manifest.json`.
 
-Local Storage: Remembers your input data between sessions.
+## 🔒 Privacy & Permissions
 
-Safe Execution: Targets input and textarea fields while ignoring hidden fields.
+-   **Storage:** Only used to save your input locally.
+-   **ActiveTab & Scripting:** Required to inject autofill logic into
+    the open page.
+-   **Offline:** No data is transmitted or stored externally.
+-   **No Tracking:** 100% client-side, safe for sensitive environments.
 
-Usage
+## 📄 License
 
-Click the extension icon.
-
-Paste your data in the following format:
-
-Name : John Doe
-Date of Birth : 01/01/1990
-National ID : 123456789
-Position : Manager
-
-
-Click Autofill Form.
-
-The script will scan the page, find matching labels, and fill the corresponding fields.
-
-🚀 Installation Guide
-
-Since these are developer tools, you can install them directly into Chrome, Edge, Brave, or Firefox without going through the store.
-
-Chrome / Edge / Brave
-
-Download or clone this repository.
-
-Open your browser and navigate to chrome://extensions.
-
-Enable Developer Mode (toggle in the top right).
-
-Click Load Unpacked.
-
-Select the specific folder for the extension you want to use (e.g., smart-form-filler).
-
-Firefox
-
-Open Firefox and navigate to about:debugging#/runtime/this-firefox.
-
-Click Load Temporary Add-on...
-
-Navigate to the extension folder and select the manifest.json file.
-
-🔒 Privacy & Permissions
-
-Storage: Used solely to save your input text locally on your machine so you don't have to re-type it.
-
-ActiveTab/Scripting: Required to inject the autofill logic into the specific page you are viewing.
-
-No Remote Tracking: These extensions run entirely offline. No data is sent to external servers.
-
-📄 License
-
-MIT License - Feel free to modify and distribute as needed.
+MIT License --- free to use, modify, and distribute.
