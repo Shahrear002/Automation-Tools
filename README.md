@@ -6,18 +6,11 @@ specialized tools optimized for different automation needs.
 
 ## 📂 Included Extensions
 
-  -----------------------------------------------------------------------
-  Extension               Purpose                 Best For
-  ----------------------- ----------------------- -----------------------
-  **Dropdown Autofiller** Bulk update of dropdown Forms requiring
-                          (`<select>`) fields     repetitive selections
-                                                  (e.g., 50+ rows set to
-                                                  "Yes")
+| Extension               | Purpose                           | Best For |
+|-------------------------|-----------------------------------|----------|
+| **Dropdown Autofiller** | Bulk update of dropdown (`<select>`) fields | Forms requiring repetitive selections (e.g., 50+ rows set to "Yes") |
+| **Smart Form Filler**   | Intelligent text field autofill using label/value mapping | Complex forms, government tenders, table-based layouts |
 
-  **Smart Form Filler**   Intelligent text field  Complex forms, gov
-                          autofill using          tenders, table-based
-                          label/value mapping     layouts
-  -----------------------------------------------------------------------
 
 ## 🛠 Extension 1: Dropdown Autofiller
 
