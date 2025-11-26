@@ -30,6 +30,11 @@ page to a specified value.
 2.  Enter the value you want to select (e.g., `Yes`, `No`, `N/A`).
 3.  Click **Fill Dropdowns**.
 
+### 📸 Screenshots
+
+![Dropdown Autofiller](assets/dropdown-filler-ss-1.png)
+![Dropdown Autofiller](assets/dropdown-filler-ss-2.png)
+
 ## 🧠 Extension 2: Smart Form Filler
 
 An advanced automation tool that maps human-readable text to form fields
@@ -63,6 +68,11 @@ systems.
 2.  Paste your label-value data.
 3.  Click **Autofill Form** --- the script scans and fills all matching
     fields.
+
+### 📸 Screenshots
+
+![Dropdown Autofiller](assets/smart-form-filler-ss-1.png)
+![Dropdown Autofiller](assets/smart-form-filler-ss-2.png)
 
 ## 🧩 Installation Guide
 
