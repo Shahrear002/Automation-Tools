@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Whisper Tab Listener",
+  "version": "1.0",
+  "description": "Stream tab audio to local Whisper AI",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module" 
+  }
+}
